@@ -1,0 +1,11 @@
+
+# Crear contenedor desarrollo
+# windows
+
+docker run --rm -ti -v  %cd%:/usr/home/dev -p 8080:80 --name AngularDev angular
+
+
+
+# Iniciar ng serve en contenedor
+
+ng serve --host 0.0.0.0 --port 80 --disable-host-check
